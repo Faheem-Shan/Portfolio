@@ -51,3 +51,12 @@ function typeEffect(){
       }
     }
   window.onload = typeEffect; // run function when page loads
+
+
+
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.navbar ul'); // Target the <ul> inside the .navbar
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
